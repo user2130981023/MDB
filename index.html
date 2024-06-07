@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <link rel="stylesheet" href="css/mdb.min.css" />
+
+  <style>
+    body {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(
+        650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%
+      ),
+        radial-gradient(
+          1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%
+        );
+      height: 100vh;
+      padding-left: 70px;
+      overflow-x: hidden;
+      color: #fff;
+    }
+    @media (max-width: 991.98px) {
+      body {
+        height: 100%;
+      }
+    }
+    .bg-theme {
+      background-color: hsl(218, 41%, 25%);
+    }
+    .bg-glass {
+      background: hsla(0, 0%, 100%, 0.15);
+      backdrop-filter: blur(30px);
+    }
+    .text-muted {
+      color: hsl(0, 0%, 80%) !important;
+    }
+    .text-success {
+      color: hsl(144, 100%, 40.9%) !important;
+    }
+    .text-danger {
+      color: hsl(350, 94.3%, 68.4%) !important;
+    }
+    .border-bottom {
+      border-bottom: 1px solid hsl(0, 0%, 50%) !important;
+    }
+    .badge {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <!-- Section: Summary -->
+    <section class="mb-5">
+      <div class="row gx-xl-5">
+        <!-- Existing cards -->
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <!-- Card -->
+          <a class="d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-6 text-reset ripple" href="#" data-ripple-color="hsl(0, 0%, 75%)">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-users fa-lg text-white fa-fw"></i>
+            </div>
+            <div class="ms-4">
+              <p class="text-muted mb-2">Users</p>
+              <p class="mb-0">
+                <span class="h5 me-2">14 567 </span>
+                <small class="text-success text-sm"><i class="fas fa-arrow-up fa-sm me-1"></i>13,48%</small>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <a class="d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-6 text-reset ripple" href="#" data-ripple-color="hsl(0, 0%, 75%)">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-file-alt fa-lg text-white fa-fw"></i>
+            </div>
+            <div class="ms-4">
+              <p class="text-muted mb-2">Page views</p>
+              <p class="mb-0">
+                <span class="h5 me-2">51 354</span>
+                <small class="text-success text-sm"><i class="fas fa-arrow-up fa-sm me-1"></i>23,58%</small>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <a class="d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-6 text-reset ripple" href="#" data-ripple-color="hsl(0, 0%, 75%)">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-clock fa-lg text-white fa-fw"></i>
+            </div>
+            <div class="ms-4">
+              <p class="text-muted mb-2">Average time</p>
+              <p class="mb-0">
+                <span class="h5 me-2">00:04:20</span>
+                <small class="text-danger text-sm"><i class="fas fa-arrow-down fa-sm me-1"></i>23,58%</small>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+          <a class="d-flex align-items-center p-4 bg-glass shadow-4-strong rounded-6 text-reset ripple" href="#" data-ripple-color="hsl(0, 0%, 75%)">
+            <div class="p-3 bg-theme rounded-4">
+              <i class="fas fa-sign-out-alt fa-lg text-white fa-fw"></i>
+            </div>
+            <div class="ms-4">
+              <p class="text-muted mb-2">Bounce rate</p>
+              <p class="mb-0">
+                <span class="h5 me-2">32.35% </span>
+                <small class="text-success text-sm"><i class="fas fa-arrow-down fa-sm me-1"></i>23,58%</small>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <div class="table-responsive bg-glass shadow-4-strong rounded-6">
+        <table class="table table-borderless table-hover align-middle mb-0 text-white">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Position</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-white">
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle" />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">John Doe</p>
+                    <p class="text-muted mb-0">john.doe@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-bold mb-1">Software engineer</p>
+                <p class="text-muted mb-0">IT department</p>
+              </td>
+              <td>
+                <span class="badge badge-success rounded-pill">Active</span>
+              </td>
+              <td>Senior</td>
+              <td>
+                <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" data-mdb-ripple-color="hsl(0, 0%, 75%)">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px" />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Alex Ray</p>
+                    <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-bold mb-1">Consultant</p>
+                <p class="text-muted mb-0">Finance</p>
+              </td>
+              <td>
+                <span class="badge badge-primary rounded-pill">Onboarding</span>
+              </td>
+              <td>Junior</td>
+              <td>
+                <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" data-mdb-ripple-color="hsl(0, 0%, 75%)">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px" />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">Kate Hunington</p>
+                    <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-bold mb-1">Designer</p>
+                <p class="text-muted mb-0">UI/UX</p>
+              </td>
+              <td>
+                <span class="badge badge-warning rounded-pill">Awaiting</span>
+              </td>
+              <td>Senior</td>
+              <td>
+                <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" data-mdb-ripple-color="hsl(0, 0%, 75%)">Edit</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center">
+                  <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px" />
+                  <div class="ms-3">
+                    <p class="fw-bold mb-1">John Doe</p>
+                    <p class="text-muted mb-0">john.doe@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <p class="fw-bold mb-1">Software engineer</p>
+                <p class="text-muted mb-0">IT department</p>
+              </td>
+              <td>
+                <span class="badge badge-danger rounded-pill">Blocked</span>
+              </td>
+              <td>Senior</td>
+              <td>
+                <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold" data-mdb-ripple-color="hsl(0, 0%, 75%)">Edit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
